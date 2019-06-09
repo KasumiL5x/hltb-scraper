@@ -95,7 +95,7 @@ class HLTB_Game_Spider(scrapy.Spider):
 		time_names = all_times.xpath('./h5/text()').extract()
 		time_times = all_times.xpath('./div/text()').extract()
 		# Strip all spaces, replace '--' with 'NA', replace '1/2' with '.5'.
-		time_times = [s.strip().replace('--', 'NA').replace('½', '.5') for s in time_times]
+		time_times = [s.strip().replace('--', '').replace('½', '.5') for s in time_times]
 		# There are two time formats: 'Mins' and 'Hours'.
 		# If 'Mins', strip and convert into a fraction of hours, but convert back to string for consistency.
 		# If 'Hours', just strip.
@@ -103,18 +103,18 @@ class HLTB_Game_Spider(scrapy.Spider):
 		# Loop through as a dict here as not all game pages have all entries, and I don't want literal missing values.
 		names_times = dict(zip(time_names, time_times))
 		for key in ['Main Story', 'Main + Extras', 'Completionist', 'All Styles', 'Co-Op', 'Vs.']:
-			game_df[key] = names_times[key] if key in names_times else 'NA'
+			game_df[key] = names_times[key] if key in names_times else ''
 
 		# Profile (game information).
 		profile = {
-			'Type': 'NA',
-			'Developers': 'NA', # includes both 'Developer' and 'Developers'
-			'Publishers': 'NA', # includes both 'Publisher' and 'Publishers'
-			'Playable On': 'NA',
-			'Genres': 'NA', # includes both 'Genre' and 'Genres'
-			'NA': 'NA',
-			'EU': 'NA',
-			'JP': 'NA'
+			'Type': '',
+			'Developers': '', # includes both 'Developer' and 'Developers'
+			'Publishers': '', # includes both 'Publisher' and 'Publishers'
+			'Playable On': '',
+			'Genres': '', # includes both 'Genre' and 'Genres'
+			'NA': '',
+			'EU': '',
+			'JP': ''
 		}
 		profile_info = response.css('div.profile_info')
 		for info in profile_info:

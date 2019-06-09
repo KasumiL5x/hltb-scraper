@@ -60,7 +60,7 @@ class HLTB_Completions_Spider(scrapy.Spider):
 				for entry in entries:
 					# platform
 					platform = entry.xpath('./tr/td[2]/text()').extract_first()
-					platform = platform.strip() if platform != None else 'NA' # if it's valid, strip, otherwise, swap out for NA
+					platform = platform.strip() if platform != None else '' # if it's valid, strip, otherwise, swap out for NA
 
 					# time
 					time = entry.xpath('./tr/td[3]/text()').extract_first()
