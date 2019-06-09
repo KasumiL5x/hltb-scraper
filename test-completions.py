@@ -43,10 +43,11 @@ def parse_completions(sel):
 		else:
 			print('Skipping unknown table:', title)
 	
-	print(game_df.info())
+	game_df.to_csv('./completions/completions-test.csv', index=None)
+	# print(game_df.info())
 	# print(game_df.platform.value_counts())
 	# print(game_df.time.value_counts())
 #end
 
-parse_completions(witcher_sel)
-# parse_completions(peggle_sel)
+# parse_completions(witcher_sel)
+parse_completions(peggle_sel)
