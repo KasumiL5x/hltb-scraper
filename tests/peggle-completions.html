@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" href="css/main_88.css"> <link rel="stylesheet" href="css/light_88.css"> <link rel="stylesheet" media="screen and (min-width: 769px)" href="css/desktop_88.css">
+<link rel="stylesheet" media="screen and (max-width: 769px)" href="css/mobile_88.css">
+<title>Peggle Deluxe | Completions - HLTB</title> <meta name="description" content="How long is Peggle Deluxe? HowLongToBeat has the answer. Create a backlog, submit your game times and compete with your friends!"> <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="img/icons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="img/icons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="img/icons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="img/icons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="app/manifest.json">
+<link rel="shortcut icon" href="img/icons/favicon.ico">
+<meta name="msapplication-starturl" content="https://howlongtobeat.com" />
+<meta name="msapplication-navbutton-color" content="#000000" />
+<meta name="msapplication-task" content="name=Home;action-uri=https://howlongtobeat.com;icon-uri=img/icons/favicon.ico" />
+<meta name="msapplication-task" content="name=Search;action-uri=https://howlongtobeat.com/search.php;icon-uri=img/icons/favicon.ico" />
+<meta name="msapplication-task" content="name=Submit;action-uri=https://howlongtobeat.com/submit.php;icon-uri=img/icons/favicon.ico" />
+<meta name="msapplication-task" content="name=Control Panel;action-uri=https://howlongtobeat.com/user.php;icon-uri=img/icons/favicon.ico" />
+<meta name="msapplication-TileImage" content="img/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="img/icons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+</head>
+<body onload="">
+<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+<div id="top" class="container"> <form name="global_search_form" autocomplete="off">
+<div class="nav_back" id="nav_back" style="display: none;"></div>
+<div class="nav">
+<div class="contain_out">
+<div class="contain_in">
+<div class="nav_g">
+<a class="brand back_black" href="./"></a>
+<div class="main_links">
+<ul class="site">
+<a class="text_primary" href="forum.php"><li>Forum</li></a>
+<a class="text_primary" href="stats.php"><li>Stats</li></a>
+<a class="text_primary" href="submit.php"><li>Submit</li></a>
+</ul>
+<ul class="login">
+<a class="text_primary" href="login.php"><li>Login</li></a>
+<a class="text_primary mobile_hide" href="login.php?t=signup"><li>Join</li></a>
+</ul>
+<div class="search_container">
+<input class="global_search_box back_form" id="global_search_box" name="global_search_box" type="text" autofocus="on" placeholder="Search Your Favorite Games..." onclick="search_enable();" onkeypress="if(event.keyCode==13){return false;}" onpaste="setTimeout(function() {return hitkey_l(0,document.forms.global_search_form.t.value,this.value);}, 50);" onkeyup="return hitkey_l(event.keyCode,document.forms.global_search_form.t.value,this.value);" value="">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="nav_u_drop" class="nav_up back_form">
+<div class="contain_in">
+<div id="nav_profile_load" class="content_25">
+<div class="in back_primary shadow_box">
+<h4 class="head_padding back_pink">My Account</h4>
+<ul>
+<li><a class='link_pink' href='user.php?n='>Profile</a></li>
+<li><a class='link_pink' href='user.php?n=&s=stats'>Stats</a></li>
+<li><a class='link_pink' href='user.php?n=&s=friends'>Friends</a></li>
+<li><a class='link_pink' href='user.php?n=&s=messages'>Messages</a></li>
+<li><a class='link_pink' href='user.php?n=&s=options'>Options</a></li>
+<li><a class='link_red' href="login.php?t=out">Log Out</a></li>
+</ul>
+</div>
+</div>
+<div id="nav_playthroughs_load" class="content_25">
+<div class="in back_primary shadow_box">
+<h4 class="head_padding back_blue">
+My Games (<a class="text_white" href="user.php?n=&s=games&playing=1&backlog=1&replays=1&custom=1&completed=1&retired=1">All</a>)
+</h4>
+<ul>
+<li><a class='link_green' href='user.php?n=&s=games&playing=1'>Playing</a></li>
+<li><a class='link_blue' href='user.php?n=&s=games&backlog=1'>Backlog</a></li>
+<li><a class='link_blueish' href='user.php?n=&s=games&replays=1'>Replays</a></li>
+<li><a class='link_purple' href='user.php?n=&s=games&completed=1'>Completed</a></li>
+<li><a class='link_red' href='user.php?n=&s=games&retired=1'>Retired</a></li>
+</ul>
+</div>
+</div>
+<div class="mobile_clear"></div>
+<div id="nav_games_load" class="content_50">
+<div class='loading_bar'>
+</div>
+</div>
+<div class="clear"></div>
+<div class="content_break"></div>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+<div id="note_bar" class="global_padding back_yellow center"></div>
+<div id="global_search" style="display:none;">
+<div class="contain_out">
+<div class="contain_in">
+
+<div class="content_50 back_secondary shadow_box">
+
+<input class="form_checkbox" type='hidden' name='t' id='search_type_g' value='games' style="display:none;">
+<a class="text_white" href="javascript:change_class('game_list_tag','content_50_static back_blue center');
+							 change_class('user_list_tag','content_50_static center');
+							 document.forms.global_search_form.t.value = 'games';
+							 globalSearch(document.forms.global_search_form.t.value,'',document.forms.global_search_form.global_search_box.value);">
+<h4 id="game_list_tag" class="content_50_static back_blue center">Games List</h4>
+</a>
+<a class="text_white" href="javascript:change_class('user_list_tag','content_50_static back_pink center');
+							 change_class('game_list_tag','content_50_static center');
+							 document.forms.global_search_form.t.value = 'users';
+							 globalSearch(document.forms.global_search_form.t.value,'',document.forms.global_search_form.global_search_box.value);">
+<h4 id="user_list_tag" class="content_50_static center">User List</h4>
+</a>
+<div class="clear"></div>
+</div>
+<div class="content_25">
+<input type="button" class="search_options_button back_secondary shadow_box" onclick="search_options();" value="Search Options">
+</div>
+<div class="content_25">
+<input type="button" class="search_options_button back_primary shadow_box" onclick="search_enable('close');" value="Close">
+</div>
+<div class="clear"></div>
+
+<div id="global_search_opt" style="display:none;">
+<div id="search_preset_g">
+<div class="content_33 back_secondary shadow_box" id="search_platform">
+<div class="in">
+<h5 class="left">Platform</h5>
+<select name='platform' autocomplete='off' class='form_select back_form' style='width:100%;' onchange='globalSearch("","",document.forms.global_search_form.global_search_box.value);'><option value=''>All</option><option value=''>---------------</option><option value='Emulated'>Emulated</option><option value='Nintendo 3DS'>Nintendo 3DS</option><option value='Nintendo Switch'>Nintendo Switch</option><option value='PC'>PC</option><option value='PlayStation 3'>PlayStation 3</option><option value='PlayStation 4'>PlayStation 4</option><option value='PlayStation Now'>PlayStation Now</option><option value='Wii U'>Wii U</option><option value='Xbox 360'>Xbox 360</option><option value='Xbox One'>Xbox One</option><option value=''>---------------</option><option value='3DO'>3DO</option><option value='Amiga'>Amiga</option><option value='Amstrad CPC'>Amstrad CPC</option><option value='Apple II'>Apple II</option><option value='Arcade'>Arcade</option><option value='Atari 2600'>Atari 2600</option><option value='Atari 5200'>Atari 5200</option><option value='Atari 7800'>Atari 7800</option><option value='Atari 8-bit Family'>Atari 8-bit Family</option><option value='Atari Jaguar'>Atari Jaguar</option><option value='Atari Jaguar CD'>Atari Jaguar CD</option><option value='Atari Lynx'>Atari Lynx</option><option value='Atari ST'>Atari ST</option><option value='BBC Micro'>BBC Micro</option><option value='Browser'>Browser</option><option value='ColecoVision'>ColecoVision</option><option value='Commodore 64'>Commodore 64</option><option value='Dreamcast'>Dreamcast</option><option value='Emulated'>Emulated</option><option value='FM Towns'>FM Towns</option><option value='Game & Watch'>Game & Watch</option><option value='Game Boy'>Game Boy</option><option value='Game Boy Advance'>Game Boy Advance</option><option value='Game Boy Color'>Game Boy Color</option><option value='Gear VR'>Gear VR</option><option value='HTC Vive'>HTC Vive</option><option value='Intellivision'>Intellivision</option><option value='Interactive Movie'>Interactive Movie</option><option value='Mobile'>Mobile</option><option value='Android'> --- Android</option><option value='iOS'> --- iOS</option><option value='Windows Phone'> --- Windows Phone</option><option value='MSX'>MSX</option><option value='N-Gage'>N-Gage</option><option value='NEC PC-8800'>NEC PC-8800</option><option value='NEC PC-9801/21'>NEC PC-9801/21</option><option value='NEC PC-FX'>NEC PC-FX</option><option value='Neo Geo'>Neo Geo</option><option value='Neo Geo CD'>Neo Geo CD</option><option value='Neo Geo Pocket'>Neo Geo Pocket</option><option value='Neo Geo Pocket Color'>Neo Geo Pocket Color</option><option value='NES/Famicom'>NES/Famicom</option><option value='Dendy'> --- Dendy</option><option value='Famicom'> --- Famicom</option><option value='Hyundai Comboy'> --- Hyundai Comboy</option><option value='NES'> --- NES</option><option value='Nintendo 2DS'>Nintendo 2DS</option><option value='Nintendo 3DS'>Nintendo 3DS</option><option value='Nintendo 64'>Nintendo 64</option><option value='Nintendo DS'>Nintendo DS</option><option value='Nintendo GameCube'>Nintendo GameCube</option><option value='Nintendo Switch'>Nintendo Switch</option><option value='Oculus Go'>Oculus Go</option><option value='Oculus Rift'>Oculus Rift</option><option value='Oculus Quest'>Oculus Quest</option><option value='OnLive'>OnLive</option><option value='Ouya'>Ouya</option><option value='PC'>PC</option><option value='Linux'> --- Linux</option><option value='Mac'> --- Mac</option><option value='Windows'> --- Windows</option><option value='Philips CD-i'>Philips CD-i</option><option value='Philips Videopac G7000'>Philips Videopac G7000</option><option value='PlayStation'>PlayStation</option><option value='PlayStation 2'>PlayStation 2</option><option value='PlayStation 3'>PlayStation 3</option><option value='PlayStation 4'>PlayStation 4</option><option value='PlayStation Mobile'>PlayStation Mobile</option><option value='PlayStation Now'>PlayStation Now</option><option value='PlayStation Vita'>PlayStation Vita</option><option value='PlayStation VR'>PlayStation VR</option><option value='Plug & Play'>Plug & Play</option><option value='PSP'>PSP</option><option value='Sega 32X'>Sega 32X</option><option value='Sega CD'>Sega CD</option><option value='Sega Game Gear'>Sega Game Gear</option><option value='Sega Master System'>Sega Master System</option><option value='Sega Mega Drive/Genesis'>Sega Mega Drive/Genesis</option><option value='Sega Genesis'> --- Sega Genesis</option><option value='Sega Mega Drive'> --- Sega Mega Drive</option><option value='Sega Saturn'>Sega Saturn</option><option value='Sharp X68000'>Sharp X68000</option><option value='Super Nintendo/Famicom'>Super Nintendo/Famicom</option><option value='Super Famicom'> --- Super Famicom</option><option value='Super Nintendo'> --- Super Nintendo</option><option value='Tiger Handheld'>Tiger Handheld</option><option value='TurboGrafx-16/PC Engine'>TurboGrafx-16/PC Engine</option><option value='TurboGrafx-16'> --- TurboGrafx-16</option><option value='PC Engine'> --- PC Engine</option><option value='TurboGrafx-CD'>TurboGrafx-CD</option><option value='Virtual Boy'>Virtual Boy</option><option value='Wii'>Wii</option><option value='Wii U'>Wii U</option><option value='WonderSwan'>WonderSwan</option><option value='WonderSwan Color'>WonderSwan Color</option><option value='Xbox'>Xbox</option><option value='Xbox 360'>Xbox 360</option><option value='Xbox One'>Xbox One</option><option value='ZX Spectrum'>ZX Spectrum</option></select> <h5 class="left">Sort By</h5>
+<select class="form_select back_form" name="search_sort_g" onchange="globalSearch(document.forms.global_search_form.t.value,'',document.forms.global_search_form.global_search_box.value);">
+<option value="name">Name</option>
+<option value="main">Main Story</option>
+<option value="mainp">Main + Extras</option>
+<option value="comp">Completionist</option>
+<option value="averagea">Average Time</option>
+<option value="rating">Top Rated</option>
+<option value="popular" selected="selected">Most Popular</option>
+<option value="backlog">Most Backlogs</option>
+<option value="usersp">Most Submissions</option>
+<option value="playing">Most Played</option>
+<option value="speedruns">Most Speedruns</option>
+<option value="release">Release Date</option>
+</select>
+</div>
+</div>
+<div class="content_33 back_secondary shadow_box">
+<div class="in">
+<h5 class="left">Length Range Category</h5>
+<select class="form_select back_form" name="search_range_type" onchange="globalSearch(document.forms.global_search_form.t.value,'',document.forms.global_search_form.global_search_box.value);">
+<option value="main">Main Story</option>
+<option value="mainp">Main + Extras</option>
+<option value="comp">Completionist</option>
+<option value="averagea">Average Time</option>
+</select>
+<h5 class="left">Hour Range</h5>
+<input class="search_range_l back_form" type="text" id="search_len_min_g" name="search_len_str_g" placeholder="Min" onkeyup="return hitkey_l(event.keyCode,document.forms.global_search_form.t.value,document.forms.global_search_form.global_search_box.value);">
+<input class="search_range_r back_form" type="text" id="search_len_max_g" name="search_len_end_g" placeholder="Max" onkeyup="return hitkey_l(event.keyCode,document.forms.global_search_form.t.value,document.forms.global_search_form.global_search_box.value);">
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<div id="search_preset_u" class="content_66 back_secondary shadow_box">
+<div class="in">
+<h5 class="left">Sort By</h5>
+<select class="form_select back_form" name="search_sort_u" onchange="globalSearch(document.forms.global_search_form.t.value,'',document.forms.global_search_form.global_search_box.value);">
+<option value="name">Name</option>
+<option value="gender">Gender</option>
+<option value="age">Age</option>
+<option value="numbacklog">Most Backlogs</option>
+<option value="numcomp">Most Completed</option>
+<option value="postcount" selected="selected">Top Posters</option>
+</select>
+</div>
+</div>
+<div class="content_33 back_secondary shadow_box">
+<div class="in">
+<div id="search_detail_box">
+<h5 class="left">Show Extra Information</h5>
+<select class="form_select back_form" name="detail" onchange="globalSearch(document.forms.global_search_form.t.value,'',document.forms.global_search_form.global_search_box.value);">
+<option value="">None</option>
+<option value="user_stats">User Stats</option>
+</select>
+</div>
+<h5 class="left">Other Options</h5>
+<input class="form_button back_dark" name="sortd" type="button" value="Normal Order" onclick="search_flip(document.forms.global_search_form.sortd.value,'search');globalSearch(document.forms.global_search_form.t.value,'',document.forms.global_search_form.global_search_box.value);">
+<input class="form_button back_red" type="reset" onmouseup="setTimeout(function(){search_flip('Reverse Order','search');globalSearch(document.forms.global_search_form.t.value,'','');},100);">
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="content_100">
+<div id="global_search_content" class="search_list"></div>
+</div>
+<div class="clear"></div>
+</div>
+</div></div>
+</form>
+<div id="global_site"> <div class="contain_out back_blue shadow_box">
+<div class="contain_in" style="        	background-image: radial-gradient(circle at 50%, rgba(50, 142, 214, 0.7), rgba(50, 142, 214, 0.95) 75%, #328ed6 100%), url('https://howlongtobeat.com/gameimages/250px-Peggle_Steam.jpg'); 				background-position: center center;
+				background-size: cover; "> <div class="profile_header_user"> <div class="profile_header shadow_text">
+Peggle Deluxe </div> <div class="game_image desktop_hide">
+<img class="shadow_box" src='https://howlongtobeat.com/gameimages/250px-Peggle_Steam.jpg' />
+</div> <div class="profile_details">
+<li>45 Playing</li>
+<li>551 Backlogs</li>
+<li>24 Replays</li>
+<li>11% Retired
+</li>
+<li>76% Rating</li>
+<li>589 Beat</li>
+<div class="clear"></div>
+</div>
+</div> <div class="content_100 scrollable back_clear"> <div class="profile_nav"> <a href="game.php?id=6947">
+<li class="">Overview</li>
+</a>
+<a href="forum.php?game=6947"><li>Forum (0)</li></a> <a href="game.php?id=6947&s=reviews"><li class="">Reviews</li></a> <a href="game.php?id=6947&s=playing"><li class="">Playing</li></a> <a href="game.php?id=6947&s=backlogs"><li class="">Backlogs</li></a> <a href="game.php?id=6947&s=completions"><li class="back_darkish">Completions</li></a> <a href="game.php?id=6947&s=retired"><li class="">Retired</li></a> <div class="clear"></div>
+</div>
+</div> <div class="content_break"></div> </div>
+<div class="clear"></div>
+</div>
+<div class="contain_out">
+<div class="contain_in"> <div class="content_100">
+<div class="in back_secondary shadow_box">
+<input id="expand_all" type="button" class="form_button form_blue primary" value="Expand All" onclick="	if(document.getElementById('expand_all').value=='Expand All'){
+											document.getElementById('expand_all').value='Collapse All';												if(document.getElementById('completion_times_1')){document.getElementById('completion_times_1').style.display='block';}
+												if(document.getElementById('completion_times_1_box')){document.getElementById('completion_times_1_box').className='in scrollable shadow_box back_primary';}												if(document.getElementById('completion_times_2')){document.getElementById('completion_times_2').style.display='block';}
+												if(document.getElementById('completion_times_2_box')){document.getElementById('completion_times_2_box').className='in scrollable shadow_box back_primary';}												if(document.getElementById('completion_times_3')){document.getElementById('completion_times_3').style.display='block';}
+												if(document.getElementById('completion_times_3_box')){document.getElementById('completion_times_3_box').className='in scrollable shadow_box back_primary';}												if(document.getElementById('completion_times_4')){document.getElementById('completion_times_4').style.display='block';}
+												if(document.getElementById('completion_times_4_box')){document.getElementById('completion_times_4_box').className='in scrollable shadow_box back_primary';}												if(document.getElementById('completion_times_5')){document.getElementById('completion_times_5').style.display='block';}
+												if(document.getElementById('completion_times_5_box')){document.getElementById('completion_times_5_box').className='in scrollable shadow_box back_primary';}												if(document.getElementById('completion_times_6')){document.getElementById('completion_times_6').style.display='block';}
+												if(document.getElementById('completion_times_6_box')){document.getElementById('completion_times_6_box').className='in scrollable shadow_box back_primary';}												if(document.getElementById('completion_times_7')){document.getElementById('completion_times_7').style.display='block';}
+												if(document.getElementById('completion_times_7_box')){document.getElementById('completion_times_7_box').className='in scrollable shadow_box back_primary';}												if(document.getElementById('completion_times_8')){document.getElementById('completion_times_8').style.display='block';}
+												if(document.getElementById('completion_times_8_box')){document.getElementById('completion_times_8_box').className='in scrollable shadow_box back_primary';}										} else {
+											document.getElementById('expand_all').value='Expand All';												if(document.getElementById('completion_times_1')){document.getElementById('completion_times_1').style.display='none';}
+												if(document.getElementById('completion_times_1_box')){document.getElementById('completion_times_1_box').className='back_primary';}												if(document.getElementById('completion_times_2')){document.getElementById('completion_times_2').style.display='none';}
+												if(document.getElementById('completion_times_2_box')){document.getElementById('completion_times_2_box').className='back_primary';}												if(document.getElementById('completion_times_3')){document.getElementById('completion_times_3').style.display='none';}
+												if(document.getElementById('completion_times_3_box')){document.getElementById('completion_times_3_box').className='back_primary';}												if(document.getElementById('completion_times_4')){document.getElementById('completion_times_4').style.display='none';}
+												if(document.getElementById('completion_times_4_box')){document.getElementById('completion_times_4_box').className='back_primary';}												if(document.getElementById('completion_times_5')){document.getElementById('completion_times_5').style.display='none';}
+												if(document.getElementById('completion_times_5_box')){document.getElementById('completion_times_5_box').className='back_primary';}												if(document.getElementById('completion_times_6')){document.getElementById('completion_times_6').style.display='none';}
+												if(document.getElementById('completion_times_6_box')){document.getElementById('completion_times_6_box').className='back_primary';}												if(document.getElementById('completion_times_7')){document.getElementById('completion_times_7').style.display='none';}
+												if(document.getElementById('completion_times_7_box')){document.getElementById('completion_times_7_box').className='back_primary';}												if(document.getElementById('completion_times_8')){document.getElementById('completion_times_8').style.display='none';}
+												if(document.getElementById('completion_times_8_box')){document.getElementById('completion_times_8_box').className='back_primary';}										}">
+<strong class="global_padding">or click each individually.</strong>
+</div>
+</div> <div class="content_100"> <h3 class="submit_head back_blue shadow_box" style="cursor:pointer;" onclick="if(document.getElementById('completion_times_1').style.display=='none'){
+											document.getElementById('completion_times_1').style.display='block';
+											document.getElementById('completion_times_1_box').className='in scrollable shadow_box back_primary';
+										}else{
+											document.getElementById('completion_times_1').style.display='none';
+											document.getElementById('completion_times_1_box').className='back_primary';
+										}">
+Main Story </h3>
+<div id="completion_times_1_box" class="back_primary">
+<div id="completion_times_1" style="display:none;"> <table class="game_main_table">
+<thead>
+<tr>
+<td style="min-width:135px;">User</td>
+<td style="min-width:135px;">Platform</td>
+<td style="min-width:100px;">Time</td>
+<td style="min-width:80px;">Rated</td> <td>Notes</td> <td>Options</td>
+</tr>
+</thead> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Tigerion">Tigerion</a> </td>
+<td></td>
+<td>42m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=72368">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Pottsy69">Pottsy69</a> </td>
+<td>Xbox 360</td>
+<td>2h </td>
+<td>90%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=19328">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Kennel">Kennel</a> </td>
+<td>PC</td>
+<td>2h 10m </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=12852">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=NovaInstinct">NovaInstinct</a> </td>
+<td>Xbox 360</td>
+<td>2h 36m </td>
+<td>100%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=87126">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Daigoro">Daigoro</a> </td>
+<td>PC</td>
+<td>2h 45m </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1384186">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=GarbatyGrabarz">GarbatyGrabarz</a> </td>
+<td>PC</td>
+<td>2h 49m </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=8457493">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n="></a> </td>
+<td>PC</td>
+<td>2h 50m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=293760">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <span class="text_grey">Private</span> </td>
+<td>PC</td>
+<td>2h 50m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=8746">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=AlRavePlays">AlRavePlays</a> </td>
+<td>Xbox 360</td>
+<td>2h 53m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=4876266">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Stex">Stex</a> </td>
+<td>PC</td>
+<td>2h 54m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=160792">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=CrazyXacker">CrazyXacker</a> </td>
+<td>PC</td>
+<td>3h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=782296">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Curlis">Curlis</a> </td>
+<td>Xbox 360</td>
+<td>3h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=98703">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=HaraldB">HaraldB</a> </td>
+<td>PC</td>
+<td>3h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=856187">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=PaperbackWriter">PaperbackWriter</a> </td>
+<td>PC</td>
+<td>3h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=3963990">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Remco32">Remco32</a> </td>
+<td>PC</td>
+<td>3h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1243450">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Volca">Volca</a> </td>
+<td>PC</td>
+<td>3h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=4602776">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Zombieset">Zombieset</a> </td>
+<td>PC</td>
+<td>3h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=3281357">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=crfleo">crfleo</a> </td>
+<td>PC</td>
+<td>3h </td>
+<td>80%</td> <td>20/06/14 s 21:00</td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=765547">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <span class="text_grey">Private</span> </td>
+<td>PC</td>
+<td>3h </td>
+<td>60%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1504455">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=lagdotcom">lagdotcom</a> </td>
+<td>Xbox 360</td>
+<td>3h </td>
+<td>NR</td> <td>fuck this game</td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=3013187">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=levitlp">levitlp</a> </td>
+<td>Xbox One</td>
+<td>3h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=3031897">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=niceTCyou">niceTCyou</a> </td>
+<td>Xbox One</td>
+<td>3h </td>
+<td>90%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=6371340">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=relyes">relyes</a> </td>
+<td>PC</td>
+<td>3h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=8318577">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=tstddj">tstddj</a> </td>
+<td>PC</td>
+<td>3h </td>
+<td>60%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1608532">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n="></a> </td>
+<td>PC</td>
+<td>3h 06m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1252799">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Kutjoch_">Kutjoch_</a> </td>
+<td>PC</td>
+<td>3h 14m </td>
+<td>NR</td> <td>Adventure mode completed.</td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=5921611">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td>  <a href="user.php?n=kaialb">kaialb</a> </td>
+<td>PC</td>
+<td>3h 14m </td>
+<td>NR</td> <td>One pause for 3:44, not counted in total</td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=3529970">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Azraden">Azraden</a> </td>
+<td>PC</td>
+<td>3h 15m </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=63284">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <span class="text_grey">Private</span> </td>
+<td>Xbox One</td>
+<td>3h 17m </td>
+<td>100%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=4439097">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=OakenPants">OakenPants</a> </td>
+<td>PC</td>
+<td>3h 18m </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1088618">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Sankt_Magni">Sankt_Magni</a> </td>
+<td>PC</td>
+<td>3h 20m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=6289356">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=lackofselfcontrol">lackofselfcontrol</a> </td>
+<td>PC</td>
+<td>3h 20m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=4662399">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=rkerbof">rkerbof</a> </td>
+<td>PC</td>
+<td>3h 20m </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=7912464">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=StrikE94">StrikE94</a> </td>
+<td>PC</td>
+<td>3h 25m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1023176">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=tehcrow">tehcrow</a> </td>
+<td>PC</td>
+<td>3h 26m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=4623250">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <span class="text_grey">Private</span> </td>
+<td>PC</td>
+<td>3h 29m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=7778615">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td>  <a href="user.php?n=Avenxer">Avenxer</a> </td>
+<td>PC</td>
+<td>3h 30m </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=929294">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Rekees">Rekees</a> </td>
+<td>PC</td>
+<td>3h 30m </td>
+<td>NR</td> <td>adventure mode only</td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=685752">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=TempeteJoachim">TempeteJoachim</a> </td>
+<td>PC</td>
+<td>3h 30m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=6393707">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=cabal901">cabal901</a> </td>
+<td>PC</td>
+<td>3h 30m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=26849">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=luddydrag">luddydrag</a> </td>
+<td>PC</td>
+<td>3h 30m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=6264600">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <span class="text_grey">Private</span> </td>
+<td>PC</td>
+<td>3h 45m </td>
+<td>60%</td> <td>Adventure Mode</td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=6871429">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=sonofrice">sonofrice</a> </td>
+<td>PC</td>
+<td>3h 45m </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=7637559">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Daiki820">Daiki820</a> </td>
+<td>PC</td>
+<td>3h 50m </td>
+<td>70%</td> <td>Main Story completed</td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=2772548">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=CryLog">CryLog</a> </td>
+<td>Xbox 360</td>
+<td>4h </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=506113">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Foreverseeking">Foreverseeking</a> </td>
+<td>PC</td>
+<td>4h </td>
+<td>60%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=657822">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td>  <a href="user.php?n=Fugeni">Fugeni</a> </td>
+<td>PC</td>
+<td>4h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=3065329">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Ludols">Ludols</a> </td>
+<td>Xbox 360</td>
+<td>4h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=3753414">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Myhar">Myhar</a> </td>
+<td>PC</td>
+<td>4h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=2517389">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Necroheadbanger">Necroheadbanger</a> </td>
+<td>PC</td>
+<td>4h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=5473976">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Paheej">Paheej</a> </td>
+<td>PC</td>
+<td>4h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=49549">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <span class="text_grey">Private</span> </td>
+<td>Xbox 360</td>
+<td>4h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=5682203">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Vallaqan">Vallaqan</a> </td>
+<td>PC</td>
+<td>4h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=5317748">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=WinNytHepOOh">WinNytHepOOh</a> </td>
+<td>PC</td>
+<td>4h </td>
+<td>60%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=763167">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Zhols">Zhols</a> </td>
+<td>PC</td>
+<td>4h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=8741195">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=a2a_REX">a2a_REX</a> </td>
+<td>PC</td>
+<td>4h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1390305">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=critch">critch</a> </td>
+<td></td>
+<td>4h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=149643">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=demonhunter312">demonhunter312</a> </td>
+<td>PC</td>
+<td>4h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=990394">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=fonewearl">fonewearl</a> </td>
+<td>PC</td>
+<td>4h </td>
+<td>100%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1309916">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=gamblor88">gamblor88</a> </td>
+<td>Xbox 360</td>
+<td>4h </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=4800906">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=krispe">krispe</a> </td>
+<td>Xbox 360</td>
+<td>4h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=6042084">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=laisum">laisum</a> </td>
+<td>PC</td>
+<td>4h </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=6707985">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=mactwist2">mactwist2</a> </td>
+<td>Xbox One</td>
+<td>4h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=3228825">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=mndlika">mndlika</a> </td>
+<td>PC</td>
+<td>4h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=6116687">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=supertoast3000">supertoast3000</a> </td>
+<td>PlayStation 3</td>
+<td>4h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=6669785">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <span class="text_grey">Private</span> </td>
+<td>PC</td>
+<td>4h </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=6294036">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=ziggystardust65">ziggystardust65</a> </td>
+<td>PC</td>
+<td>4h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=5550281">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=zolebug">zolebug</a> </td>
+<td>PC</td>
+<td>4h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1254797">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=mrcrimpbiscuit">mrcrimpbiscuit</a> </td>
+<td>Xbox 360</td>
+<td>4h 12m </td>
+<td>100%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=562731">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n="></a> </td>
+<td>iOS</td>
+<td>4h 15m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1309155">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=CoyChoy">CoyChoy</a> </td>
+<td>PC</td>
+<td>4h 15m </td>
+<td>70%</td> <td>Adventure mode</td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1445995">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=SignoDeGame">SignoDeGame</a> </td>
+<td>PC</td>
+<td>4h 15m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=7900451">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=aklon84">aklon84</a> </td>
+<td>PC</td>
+<td>4h 15m </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=4261614">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <span class="text_grey">Private</span> </td>
+<td>Mac</td>
+<td>4h 15m </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=2291560">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Onubis">Onubis</a> </td>
+<td>PC</td>
+<td>4h 19m </td>
+<td>90%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=883374">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Gutterdammerung">Gutterdammerung</a> </td>
+<td>PC</td>
+<td>4h 38m </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=878673">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Forma">Forma</a> </td>
+<td>PC</td>
+<td>5h </td>
+<td>70%</td> <td></td> <td>
+ <a href="game.php?id=6947&s=challenge&sub_id=6211094">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=KINGXKUMA">KINGXKUMA</a> </td>
+<td>PC</td>
+<td>5h </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=6208325">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <span class="text_grey">Private</span> </td>
+<td>PC</td>
+<td>5h </td>
+<td>10%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1830655">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=laurenhiya21">laurenhiya21</a> </td>
+<td>PC</td>
+<td>5h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=971247">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=redndead">redndead</a> </td>
+<td>PC</td>
+<td>5h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=836914">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=reinth">reinth</a> </td>
+<td>PC</td>
+<td>5h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=2025351">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=sygtnok">sygtnok</a> </td>
+<td>PC</td>
+<td>5h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=3338153">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=the_shadow9899">the_shadow9899</a> </td>
+<td>PC</td>
+<td>5h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=5412373">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n="></a> </td>
+<td>PC</td>
+<td>5h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=8891070">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=JipiMan">JipiMan</a> </td>
+<td>PC</td>
+<td>5h 05m </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1789693">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=willwhat">willwhat</a> </td>
+<td>PC</td>
+<td>5h 12m </td>
+<td>60%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=4417185">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=stratios">stratios</a> </td>
+<td>PC</td>
+<td>5h 48m </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=392478">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n="></a> </td>
+<td>PC</td>
+<td>6h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=7557423">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=GodotIV">GodotIV</a> </td>
+<td>PC</td>
+<td>6h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=8240961">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=HighOverseer">HighOverseer</a> </td>
+<td>Xbox One</td>
+<td>6h </td>
+<td>90%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=6442187">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=MatyMeatBoy">MatyMeatBoy</a> </td>
+<td>Xbox 360</td>
+<td>6h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1748262">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Thexder">Thexder</a> </td>
+<td>PC</td>
+<td>6h </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=64278">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=coolguymarek">coolguymarek</a> </td>
+<td>PC</td>
+<td>6h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=6489669">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=impasse_">impasse_</a> </td>
+<td>Emulated</td>
+<td>6h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=8475892">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=jacquelle">jacquelle</a> </td>
+<td>iOS</td>
+<td>6h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=330200">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=sircaptsalmon">sircaptsalmon</a> </td>
+<td>PC</td>
+<td>6h </td>
+<td>60%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=3924517">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+ <tr>
+<td> <a href="user.php?n=Camden">Camden</a> </td>
+<td>PC</td>
+<td>7h </td>
+<td>60%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=522744">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=TheFizz">TheFizz</a> </td>
+<td>PC</td>
+<td>7h </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=819630">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Averrant">Averrant</a> </td>
+<td>PC</td>
+<td>7h 32m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=5380483">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Rubius">Rubius</a> </td>
+<td>PC</td>
+<td>7h 50m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=56627">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Zipster">Zipster</a> </td>
+<td>PC</td>
+<td>7h 54m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=186073">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=kamikaze424">kamikaze424</a> </td>
+<td>PC</td>
+<td>7h 57m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=4528371">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Kratos">Kratos</a> </td>
+<td>PC</td>
+<td>9h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=793003">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Bold_Wolf">Bold_Wolf</a> </td>
+<td>PC</td>
+<td>10h </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=3419601">Report</a> </td>
+</tr>
+</tbody> </table> </div>
+</div> </div> <div class="content_100"> <h3 class="submit_head back_blue shadow_box" style="cursor:pointer;" onclick="if(document.getElementById('completion_times_2').style.display=='none'){
+											document.getElementById('completion_times_2').style.display='block';
+											document.getElementById('completion_times_2_box').className='in scrollable shadow_box back_primary';
+										}else{
+											document.getElementById('completion_times_2').style.display='none';
+											document.getElementById('completion_times_2_box').className='back_primary';
+										}">
+Main + Extras </h3>
+<div id="completion_times_2_box" class="back_primary">
+<div id="completion_times_2" style="display:none;"> <table class="game_main_table">
+<thead>
+<tr>
+<td style="min-width:135px;">User</td>
+<td style="min-width:135px;">Platform</td>
+ <td style="min-width:100px;">Time</td>
+<td style="min-width:80px;">Rated</td> <td>Notes</td> <td>Options</td>
+</tr>
+</thead> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Mibso">Mibso</a> </td>
+<td>PC</td>
+<td>3h </td>
+<td>50%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=13042">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <span class="text_grey">Private</span> </td>
+<td>Xbox One</td>
+<td>3h 37m </td>
+<td>100%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=4439097">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=ToffeesXI">ToffeesXI</a> </td>
+<td>PC</td>
+<td>4h </td>
+<td>60%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=5851611">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Dragon2205">Dragon2205</a> </td>
+<td>Mac</td>
+<td>4h 02m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=8605318">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=repulsionslayer">repulsionslayer</a> </td>
+<td>PC</td>
+<td>5h </td>
+<td>60%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1034809">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <span class="text_grey">Private</span> </td>
+<td>PC</td>
+<td>5h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=2695205">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=niceTCyou">niceTCyou</a> </td>
+<td>Mac</td>
+<td>6h </td>
+<td>90%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=6371341">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=wicko">wicko</a> </td>
+<td>PC</td>
+<td>6h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=566005">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Wickhmar">Wickhmar</a> </td>
+<td>iOS</td>
+<td>6h 50m </td>
+<td>100%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=114499">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=caitiec">caitiec</a> </td>
+<td>PC</td>
+<td>6h 50m </td>
+<td>60%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1529560">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Beholder">Beholder</a> </td>
+<td>Xbox 360</td>
+<td>7h </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1917282">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=TotalHenshin">TotalHenshin</a> </td>
+<td></td>
+<td>7h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=95969">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=dupuikan">dupuikan</a> </td>
+<td>PlayStation 3</td>
+<td>8h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=89411">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=jacquelle">jacquelle</a> </td>
+<td>iOS</td>
+<td>8h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=330200">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Labyras">Labyras</a> </td>
+<td>PC</td>
+<td>10h </td>
+<td>90%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=217727">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=aviggo77">aviggo77</a> </td>
+<td>PC</td>
+<td>11h </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=7508434">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=IxLOPEZxI">IxLOPEZxI</a> </td>
+<td>PC</td>
+<td>12h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=952270">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=LeoKasper">LeoKasper</a> </td>
+<td>iOS</td>
+<td>12h </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=6603461">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=PeaksClimber">PeaksClimber</a> </td>
+<td>PC</td>
+<td>12h </td>
+<td>60%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=4589864">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=RunningMan">RunningMan</a> </td>
+<td>Mac</td>
+<td>12h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=139911">Report</a>  </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=_scott">_scott</a> </td>
+<td></td>
+<td>12h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=126240">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=mrcrimpbiscuit">mrcrimpbiscuit</a> </td>
+<td>Xbox 360</td>
+<td>12h 10m </td>
+<td>100%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=562731">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=monkeez">monkeez</a> </td>
+<td>PC</td>
+<td>12h 53m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=5386069">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=peterclo">peterclo</a> </td>
+<td>iOS</td>
+<td>13h </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=843583">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <span class="text_grey">Private</span> </td>
+<td>PC</td>
+<td>13h 58m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=3884588">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Bold_Wolf">Bold_Wolf</a> </td>
+<td>PC</td>
+<td>15h </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=3419601">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Grahamtams">Grahamtams</a> </td>
+<td>PC</td>
+<td>15h </td>
+<td>100%</td> <td>More addictive than it looks. Lots of really fun challenges to play. Simplistic but genius.</td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=53827">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <span class="text_grey">Private</span> </td>
+<td>PC</td>
+<td>15h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=196097">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=efoja">efoja</a> </td>
+<td>PC</td>
+<td>15h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=77240">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=CoyChoy">CoyChoy</a> </td>
+<td>PC</td>
+<td>16h 25m </td>
+<td>70%</td> <td>Adventure mode, 58/75 Challenges</td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1445995">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=nurz">nurz</a> </td>
+<td>PC</td>
+<td>17h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=6086258">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <span class="text_grey">Private</span> </td>
+<td>Xbox 360</td>
+<td>20h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=2241233">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Chronoja">Chronoja</a> </td>
+<td>PC</td>
+<td>25h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=135988">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=SONG">SONG</a> </td>
+<td>iOS</td>
+<td>30h </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=621109">Report</a> </td>
+</tr>
+</tbody> </table> </div>
+</div> </div> <div class="content_100"> <h3 class="submit_head back_blue shadow_box" style="cursor:pointer;" onclick="if(document.getElementById('completion_times_3').style.display=='none'){
+											document.getElementById('completion_times_3').style.display='block';
+											document.getElementById('completion_times_3_box').className='in scrollable shadow_box back_primary';
+										}else{
+											document.getElementById('completion_times_3').style.display='none';
+											document.getElementById('completion_times_3_box').className='back_primary';
+										}">
+Completionists </h3>
+<div id="completion_times_3_box" class="back_primary">
+<div id="completion_times_3" style="display:none;"> <table class="game_main_table">
+<thead>
+<tr>
+<td style="min-width:135px;">User</td>
+<td style="min-width:135px;">Platform</td>
+<td style="min-width:100px;">Time</td>
+<td style="min-width:80px;">Rated</td> <td>Notes</td> <td>Options</td>
+</tr>
+</thead> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Ashkaan">Ashkaan</a> </td>
+<td>PC</td>
+<td>8h </td>
+<td>100%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=17219">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <span class="text_grey">Private</span> </td>
+<td>PC</td>
+<td>13h 30m </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=5977608">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n="></a> </td>
+<td>PC</td>
+<td>21h </td>
+<td>NR</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=293761">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=NeoJ">NeoJ</a> </td>
+<td>PC</td>
+<td>21h 54m </td>
+<td>70%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=761208">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=niceTCyou">niceTCyou</a> </td>
+<td>Mac</td>
+<td>35h </td>
+<td>90%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=8804337">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <span class="text_grey">Private</span> </td>
+<td>PC</td>
+<td>40h </td>
+<td>100%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=363125">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Yunnlith">Yunnlith</a> </td>
+<td>PC</td>
+<td>42h </td>
+<td>60%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=1526455">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=ethnictrailmix">ethnictrailmix</a> </td>
+<td>PC</td>
+<td>64h 16m </td>
+<td>80%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=201219">Report</a> </td>
+</tr>
+</tbody> <tbody class="spreadsheet">
+<tr>
+<td> <a href="user.php?n=Filter5X">Filter5X</a> </td>
+<td>PC</td>
+<td>68h </td>
+<td>90%</td> <td></td> <td>
+<a href="game.php?id=6947&s=challenge&sub_id=48891">Report</a> </td>
+</tr>
+</tbody> </table> </div>
+</div> </div> <div class="content_100"> <h3 class="submit_head back_blue shadow_box" style="cursor:pointer;" onclick="if(document.getElementById('completion_times_4').style.display=='none'){
+											document.getElementById('completion_times_4').style.display='block';
+											document.getElementById('completion_times_4_box').className='in scrollable shadow_box back_primary';
+										}else{
+											document.getElementById('completion_times_4').style.display='none';
+											document.getElementById('completion_times_4_box').className='back_primary';
+										}">
+Completed - No Time </h3>
+<div id="completion_times_4_box" class="back_primary">
+<div id="completion_times_4" style="display:none;"> <a class="form_button back_blue" href="user.php?n=005alpha">005alpha</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=AZisBack">AZisBack</a> <a class="form_button back_blue" href="user.php?n=AcidCrashX">AcidCrashX</a> <a class="form_button back_blue" href="user.php?n=AfroThunder">AfroThunder</a> <a class="form_button back_blue" href="user.php?n=AfroThunder0">AfroThunder0</a> <a class="form_button back_blue" href="user.php?n=AlabasterSlim">AlabasterSlim</a> <a class="form_button back_blue" href="user.php?n=Alterexus">Alterexus</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=AndrewB">AndrewB</a> <a class="form_button back_blue" href="user.php?n=AnnuityDew">AnnuityDew</a> <a class="form_button back_blue" href="user.php?n=AnthoniusZ">AnthoniusZ</a> <a class="form_button back_blue" href="user.php?n=Armbreakfire">Armbreakfire</a> <a class="form_button back_blue" href="user.php?n=Arteus">Arteus</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=Audeez">Audeez</a> <a class="form_button back_blue" href="user.php?n=AyyGavin">AyyGavin</a> <a class="form_button back_blue" href="user.php?n=BCslav">BCslav</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=BacklogBadger">BacklogBadger</a> <a class="form_button back_blue" href="user.php?n=Bad_Zwolf">Bad_Zwolf</a> <a class="form_button back_blue" href="user.php?n=Bangouda">Bangouda</a> <a class="form_button back_blue" href="user.php?n=BaptisteS67">BaptisteS67</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=BishounenP">BishounenP</a> <a class="form_button back_blue" href="user.php?n=Bitera">Bitera</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=Blautkake">Blautkake</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=Boomsta">Boomsta</a> <a class="form_button back_blue" href="user.php?n=Bubs14">Bubs14</a> <a class="form_button back_blue" href="user.php?n=BuntyHoven">BuntyHoven</a> <a class="form_button back_blue" href="user.php?n=Californ1a">Californ1a</a> <a class="form_button back_blue" href="user.php?n=Cascal">Cascal</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=CharlesBarkley">CharlesBarkley</a> <a class="form_button back_blue" href="user.php?n=ChrisAsmadi">ChrisAsmadi</a> <a class="form_button back_blue" href="user.php?n=Citricola">Citricola</a> <a class="form_button back_blue" href="user.php?n=CitrusFury">CitrusFury</a> <a class="form_button back_blue" href="user.php?n=Crabninja">Crabninja</a> <a class="form_button back_blue" href="user.php?n=CrackTheSkye">CrackTheSkye</a> <a class="form_button back_blue" href="user.php?n=Crank">Crank</a> <a class="form_button back_blue" href="user.php?n=CrawlinUK">CrawlinUK</a> <a class="form_button back_blue" href="user.php?n=CustomTomato">CustomTomato</a> <a class="form_button back_blue" href="user.php?n=CyberKiller">CyberKiller</a> <a class="form_button back_blue" href="user.php?n=Cyryus">Cyryus</a> <a class="form_button back_blue" href="user.php?n=D5120">D5120</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=Dagamer2">Dagamer2</a> <a class="form_button back_blue" href="user.php?n=DanixDanilovic">DanixDanilovic</a> <a class="form_button back_blue" href="user.php?n=DanteG">DanteG</a> <a class="form_button back_blue" href="user.php?n=Dawrky">Dawrky</a> <a class="form_button back_blue" href="user.php?n=Desrosier">Desrosier</a> <a class="form_button back_blue" href="user.php?n=Devilturnip">Devilturnip</a> <a class="form_button back_blue" href="user.php?n=DigitalScroogeMcDuck">DigitalScroogeMcDuck</a> <a class="form_button back_blue" href="user.php?n=DigzD3">DigzD3</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=Dojinski">Dojinski</a> <a class="form_button back_blue" href="user.php?n=DonPascualino">DonPascualino</a> <a class="form_button back_blue" href="user.php?n=Doodee">Doodee</a> <a class="form_button back_blue" href="user.php?n=DrowsyOne">DrowsyOne</a> <a class="form_button back_blue" href="user.php?n=DryvBy">DryvBy</a> <a class="form_button back_blue" href="user.php?n=Dulus_No">Dulus_No</a> <a class="form_button back_blue" href="user.php?n=DyHi5">DyHi5</a> <a class="form_button back_blue" href="user.php?n=Eleima">Eleima</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=EnemyViolent">EnemyViolent</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=Erunion">Erunion</a> <a class="form_button back_blue" href="user.php?n=Erunion">Erunion</a> <a class="form_button back_blue" href="user.php?n=Erunion">Erunion</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=Ezekiel000">Ezekiel000</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=Failstar">Failstar</a> <a class="form_button back_blue" href="user.php?n=Fetch">Fetch</a> <a class="form_button back_blue" href="user.php?n=Fetch_Inc">Fetch_Inc</a> <a class="form_button back_blue" href="user.php?n=Fetch_Inc">Fetch_Inc</a> <a class="form_button back_blue" href="user.php?n=Firebottle">Firebottle</a> <a class="form_button back_blue" href="user.php?n=Flatworld">Flatworld</a> <a class="form_button back_blue" href="user.php?n=Fortinbras">Fortinbras</a> <a class="form_button back_blue" href="user.php?n=Furen">Furen</a> <a class="form_button back_blue" href="user.php?n=Game_Professor">Game_Professor</a> <a class="form_button back_blue" href="user.php?n=GamerBeck">GamerBeck</a> <a class="form_button back_blue" href="user.php?n=Ghost_Ch1ps">Ghost_Ch1ps</a> <a class="form_button back_blue" href="user.php?n=Gregos">Gregos</a> <a class="form_button back_blue" href="user.php?n=GunslingerVV">GunslingerVV</a> <a class="form_button back_blue" href="user.php?n=Helvedeshunden">Helvedeshunden</a> <a class="form_button back_blue" href="user.php?n=HernanRC">HernanRC</a> <a class="form_button back_blue" href="user.php?n=HikingWithHobos">HikingWithHobos</a> <a class="form_button back_blue" href="user.php?n=Hjreed">Hjreed</a> <a class="form_button back_blue" href="user.php?n=Hornjabber">Hornjabber</a> <a class="form_button back_blue" href="user.php?n=Huntsman">Huntsman</a> <a class="form_button back_blue" href="user.php?n=I_am_nobody">I_am_nobody</a> <a class="form_button back_blue" href="user.php?n=Inclushe">Inclushe</a> <a class="form_button back_blue" href="user.php?n=Jansten">Jansten</a> <a class="form_button back_blue" href="user.php?n=Jared80KA">Jared80KA</a> <a class="form_button back_blue" href="user.php?n=Jeeps">Jeeps</a> <a class="form_button back_blue" href="user.php?n=JennyC">JennyC</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=JousterL">JousterL</a> <a class="form_button back_blue" href="user.php?n=KKOB">KKOB</a> <a class="form_button back_blue" href="user.php?n=Kadayi">Kadayi</a> <a class="form_button back_blue" href="user.php?n=Katavia">Katavia</a> <a class="form_button back_blue" href="user.php?n=KehtaamuNgetal">KehtaamuNgetal</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=Kippynator">Kippynator</a> <a class="form_button back_blue" href="user.php?n=Kiruvi">Kiruvi</a> <a class="form_button back_blue" href="user.php?n=Kitradu">Kitradu</a> <a class="form_button back_blue" href="user.php?n=Kpaxx">Kpaxx</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=Krusa27">Krusa27</a> <a class="form_button back_blue" href="user.php?n=Kunt_Kake">Kunt_Kake</a> <a class="form_button back_blue" href="user.php?n=Kurtis_James">Kurtis_James</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=LadadaBoy">LadadaBoy</a> <a class="form_button back_blue" href="user.php?n=Lasteon">Lasteon</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=LittlBUGer">LittlBUGer</a> <a class="form_button back_blue" href="user.php?n=Littlepeep">Littlepeep</a> <a class="form_button back_blue" href="user.php?n=LiveWire">LiveWire</a> <a class="form_button back_blue" href="user.php?n=LordCupcakes">LordCupcakes</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=MagicMop">MagicMop</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=Marche100">Marche100</a> <a class="form_button back_blue" href="user.php?n=Masochisticpunk">Masochisticpunk</a> <a class="form_button back_blue" href="user.php?n=Mazena">Mazena</a> <a class="form_button back_blue" href="user.php?n=McGill93">McGill93</a> <a class="form_button back_blue" href="user.php?n=MessnMan">MessnMan</a> <a class="form_button back_blue" href="user.php?n=MoldyClay87">MoldyClay87</a> <a class="form_button back_blue" href="user.php?n=Morquea">Morquea</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=MunkyG">MunkyG</a> <a class="form_button back_blue" href="user.php?n=NDGMaxi">NDGMaxi</a> <a class="form_button back_blue" href="user.php?n=NGHathi">NGHathi</a> <a class="form_button back_blue" href="user.php?n=NanakiThirteen">NanakiThirteen</a> <a class="form_button back_blue" href="user.php?n=Neboh">Neboh</a> <a class="form_button back_blue" href="user.php?n=NinjaShadow24">NinjaShadow24</a> <a class="form_button back_blue" href="user.php?n=Nopcop97">Nopcop97</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=Ordnot">Ordnot</a> <a class="form_button back_blue" href="user.php?n=Parrishhhh">Parrishhhh</a> <a class="form_button back_blue" href="user.php?n=PaulyD">PaulyD</a> <a class="form_button back_blue" href="user.php?n=PeaceThruWar">PeaceThruWar</a> <a class="form_button back_blue" href="user.php?n=PioneerRaptor">PioneerRaptor</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=Preyer">Preyer</a> <a class="form_button back_blue" href="user.php?n=Punchbot">Punchbot</a> <a class="form_button back_blue" href="user.php?n=RabidOyster">RabidOyster</a> <a class="form_button back_blue" href="user.php?n=Ragilliveson">Ragilliveson</a> <a class="form_button back_blue" href="user.php?n=Raksadar">Raksadar</a> <a class="form_button back_blue" href="user.php?n=RandomViolence">RandomViolence</a> <a class="form_button back_blue" href="user.php?n=Raneck">Raneck</a> <a class="form_button back_blue" href="user.php?n=RayeoTNJ">RayeoTNJ</a> <a class="form_button back_blue" href="user.php?n=RayeoTNJ">RayeoTNJ</a> <a class="form_button back_blue" href="user.php?n=Raynetastic">Raynetastic</a> <a class="form_button back_blue" href="user.php?n=RenatoW">RenatoW</a> <a class="form_button back_blue" href="user.php?n=Rhuba">Rhuba</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=Robirb">Robirb</a> <a class="form_button back_blue" href="user.php?n=Ron57">Ron57</a> <a class="form_button back_blue" href="user.php?n=Rouxbarbe">Rouxbarbe</a> <a class="form_button back_blue" href="user.php?n=Rubius">Rubius</a> <a class="form_button back_blue" href="user.php?n=SHVRD">SHVRD</a> <a class="form_button back_blue" href="user.php?n=SOUP32">SOUP32</a> <a class="form_button back_blue" href="user.php?n=Sabruer">Sabruer</a> <a class="form_button back_blue" href="user.php?n=Sadra">Sadra</a> <a class="form_button back_blue" href="user.php?n=Sankuri">Sankuri</a> <a class="form_button back_blue" href="user.php?n=SavePoint">SavePoint</a> <a class="form_button back_blue" href="user.php?n=Screensava64">Screensava64</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=SimonDor">SimonDor</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=SkettiKing">SkettiKing</a> <a class="form_button back_blue" href="user.php?n=Skrunch">Skrunch</a> <a class="form_button back_blue" href="user.php?n=Slopycoperbotom">Slopycoperbotom</a> <a class="form_button back_blue" href="user.php?n=Slyphoria">Slyphoria</a> <a class="form_button back_blue" href="user.php?n=SofaFox">SofaFox</a> <a class="form_button back_blue" href="user.php?n=Solo">Solo</a> <a class="form_button back_blue" href="user.php?n=Southport192">Southport192</a> <a class="form_button back_blue" href="user.php?n=Sparkster">Sparkster</a> <a class="form_button back_blue" href="user.php?n=Spodge">Spodge</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=SpryPunk">SpryPunk</a> <a class="form_button back_blue" href="user.php?n=Stupacabra">Stupacabra</a> <a class="form_button back_blue" href="user.php?n=Sutty_">Sutty_</a> <a class="form_button back_blue" href="user.php?n=SwedishCheese">SwedishCheese</a> <a class="form_button back_blue" href="user.php?n=Syngo9">Syngo9</a> <a class="form_button back_blue" href="user.php?n=T_ungsten_T">T_ungsten_T</a> <a class="form_button back_blue" href="user.php?n=TaeKwonDoughnut">TaeKwonDoughnut</a> <a class="form_button back_blue" href="user.php?n=Tetrahelix">Tetrahelix</a> <a class="form_button back_blue" href="user.php?n=The210711">The210711</a> <a class="form_button back_blue" href="user.php?n=The210711">The210711</a> <a class="form_button back_blue" href="user.php?n=TheDanielColeman">TheDanielColeman</a> <a class="form_button back_blue" href="user.php?n=TheJelloWarrior">TheJelloWarrior</a> <a class="form_button back_blue" href="user.php?n=TheQuietCroc">TheQuietCroc</a> <a class="form_button back_blue" href="user.php?n=TheRandomOne">TheRandomOne</a> <a class="form_button back_blue" href="user.php?n=TheRandomOne">TheRandomOne</a> <a class="form_button back_blue" href="user.php?n=TheReaperCooL">TheReaperCooL</a> <a class="form_button back_blue" href="user.php?n=TheReaperCooL">TheReaperCooL</a> <a class="form_button back_blue" href="user.php?n=The_Batman053">The_Batman053</a> <a class="form_button back_blue" href="user.php?n=ThreePinkApples">ThreePinkApples</a> <a class="form_button back_blue" href="user.php?n=Toraidoron">Toraidoron</a> <a class="form_button back_blue" href="user.php?n=Tordek13">Tordek13</a> <a class="form_button back_blue" href="user.php?n=Torless">Torless</a> <a class="form_button back_blue" href="user.php?n=TotallyYllatot">TotallyYllatot</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=TwoThrones">TwoThrones</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=UnicornMaster">UnicornMaster</a> <a class="form_button back_blue" href="user.php?n=UnlikeTower">UnlikeTower</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=Ventrus">Ventrus</a> <a class="form_button back_blue" href="user.php?n=Ventrus">Ventrus</a> <a class="form_button back_blue" href="user.php?n=Vinns">Vinns</a> <a class="form_button back_blue" href="user.php?n=Vivify">Vivify</a> <a class="form_button back_blue" href="user.php?n=Vlash">Vlash</a> <a class="form_button back_blue" href="user.php?n=VoidGear">VoidGear</a> <a class="form_button back_blue" href="user.php?n=VonDozier">VonDozier</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=Wales">Wales</a> <a class="form_button back_blue" href="user.php?n=Whazze">Whazze</a> <a class="form_button back_blue" href="user.php?n=Windfish90">Windfish90</a> <a class="form_button back_blue" href="user.php?n=Window2Gaming">Window2Gaming</a> <a class="form_button back_blue" href="user.php?n=Wtfreaper">Wtfreaper</a> <a class="form_button back_blue" href="user.php?n=Yeti_likes_mocha">Yeti_likes_mocha</a> <a class="form_button back_blue" href="user.php?n=Ywizzle">Ywizzle</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=Zazabar">Zazabar</a> <a class="form_button back_blue" href="user.php?n=ZeroGn28">ZeroGn28</a> <a class="form_button back_blue" href="user.php?n=ZeroXZee">ZeroXZee</a> <a class="form_button back_blue" href="user.php?n=Zero_Awakening">Zero_Awakening</a> <a class="form_button back_blue" href="user.php?n=Zeushbien">Zeushbien</a> <a class="form_button back_blue" href="user.php?n=Zirilan">Zirilan</a> <a class="form_button back_blue" href="user.php?n=adamjb8">adamjb8</a> <a class="form_button back_blue" href="user.php?n=agiaht">agiaht</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=akaikem">akaikem</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=albedos_shadow">albedos_shadow</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=arj154">arj154</a> <a class="form_button back_blue" href="user.php?n=arkisis">arkisis</a> <a class="form_button back_blue" href="user.php?n=aslum">aslum</a> <a class="form_button back_blue" href="user.php?n=atacama">atacama</a> <a class="form_button back_blue" href="user.php?n=atomicburton89">atomicburton89</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=azador23">azador23</a> <a class="form_button back_blue" href="user.php?n=badgerbaj">badgerbaj</a> <a class="form_button back_blue" href="user.php?n=battledc">battledc</a> <a class="form_button back_blue" href="user.php?n=baudattitude">baudattitude</a> <a class="form_button back_blue" href="user.php?n=bdh_">bdh_</a> <a class="form_button back_blue" href="user.php?n=bemusedchunk">bemusedchunk</a> <a class="form_button back_blue" href="user.php?n=binjjo">binjjo</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=bluffys">bluffys</a> <a class="form_button back_blue" href="user.php?n=boogieboy90">boogieboy90</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=boomawoom">boomawoom</a> <a class="form_button back_blue" href="user.php?n=born_naughty">born_naughty</a> <a class="form_button back_blue" href="user.php?n=boxeru13">boxeru13</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=calamitytaryn">calamitytaryn</a> <a class="form_button back_blue" href="user.php?n=capsy">capsy</a> <a class="form_button back_blue" href="user.php?n=cjbensley">cjbensley</a> <a class="form_button back_blue" href="user.php?n=cjm038000">cjm038000</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=concretedonkey">concretedonkey</a> <a class="form_button back_blue" href="user.php?n=conejito_zombi">conejito_zombi</a> <a class="form_button back_blue" href="user.php?n=cpvoinea">cpvoinea</a> <a class="form_button back_blue" href="user.php?n=creepjacked">creepjacked</a> <a class="form_button back_blue" href="user.php?n=cseraph">cseraph</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=darkproteus66">darkproteus66</a> <a class="form_button back_blue" href="user.php?n=deadraque">deadraque</a> <a class="form_button back_blue" href="user.php?n=desrever">desrever</a> <a class="form_button back_blue" href="user.php?n=devmonster">devmonster</a> <a class="form_button back_blue" href="user.php?n=donnydork">donnydork</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=dylanwest22">dylanwest22</a> <a class="form_button back_blue" href="user.php?n=ebnuk">ebnuk</a> <a class="form_button back_blue" href="user.php?n=echoesmyron">echoesmyron</a> <a class="form_button back_blue" href="user.php?n=echoesmyron">echoesmyron</a> <a class="form_button back_blue" href="user.php?n=edwardthefirst">edwardthefirst</a> <a class="form_button back_blue" href="user.php?n=electonthefire">electonthefire</a> <a class="form_button back_blue" href="user.php?n=em_being">em_being</a> <a class="form_button back_blue" href="user.php?n=entwined_lotus">entwined_lotus</a> <a class="form_button back_blue" href="user.php?n=erato">erato</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=evilbubbles360">evilbubbles360</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=fistynuts">fistynuts</a> <a class="form_button back_blue" href="user.php?n=flunderingchipper">flunderingchipper</a> <a class="form_button back_blue" href="user.php?n=foppotee">foppotee</a> <a class="form_button back_blue" href="user.php?n=fossboss33">fossboss33</a> <a class="form_button back_blue" href="user.php?n=fufful">fufful</a> <a class="form_button back_blue" href="user.php?n=ganonms">ganonms</a> <a class="form_button back_blue" href="user.php?n=gitaarheld81">gitaarheld81</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=grantwu">grantwu</a> <a class="form_button back_blue" href="user.php?n=grinwithoutakat">grinwithoutakat</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=harmony19">harmony19</a> <a class="form_button back_blue" href="user.php?n=hed0rizer">hed0rizer</a> <a class="form_button back_blue" href="user.php?n=holmcross">holmcross</a> <a class="form_button back_blue" href="user.php?n=i_am_not_david">i_am_not_david</a> <a class="form_button back_blue" href="user.php?n=ianfhunter">ianfhunter</a> <a class="form_button back_blue" href="user.php?n=immatt1two3">immatt1two3</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=jdp">jdp</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=jellyfishcactus">jellyfishcactus</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=jml897">jml897</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=kariyanine">kariyanine</a> <a class="form_button back_blue" href="user.php?n=kariyanine">kariyanine</a> <a class="form_button back_blue" href="user.php?n=kenny4159">kenny4159</a> <a class="form_button back_blue" href="user.php?n=kenshin534">kenshin534</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=kevinbushman">kevinbushman</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=kristmace">kristmace</a> <a class="form_button back_blue" href="user.php?n=kristmace">kristmace</a> <a class="form_button back_blue" href="user.php?n=legandir">legandir</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=lekikel">lekikel</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=lord_nubs">lord_nubs</a> <a class="form_button back_blue" href="user.php?n=magnative">magnative</a> <a class="form_button back_blue" href="user.php?n=magnub">magnub</a> <a class="form_button back_blue" href="user.php?n=malouf">malouf</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=martinwalls">martinwalls</a> <a class="form_button back_blue" href="user.php?n=matsze">matsze</a> <a class="form_button back_blue" href="user.php?n=maz35">maz35</a> <a class="form_button back_blue" href="user.php?n=metaljoints">metaljoints</a> <a class="form_button back_blue" href="user.php?n=mheap">mheap</a> <a class="form_button back_blue" href="user.php?n=minime283">minime283</a> <a class="form_button back_blue" href="user.php?n=mittens_esq">mittens_esq</a> <a class="form_button back_blue" href="user.php?n=mixtapir">mixtapir</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=mungusi">mungusi</a> <a class="form_button back_blue" href="user.php?n=nado">nado</a> <a class="form_button back_blue" href="user.php?n=nateify">nateify</a> <a class="form_button back_blue" href="user.php?n=ndizzlecfizzle">ndizzlecfizzle</a> <a class="form_button back_blue" href="user.php?n=ndizzlecfizzle">ndizzlecfizzle</a> <a class="form_button back_blue" href="user.php?n=neogeoppo">neogeoppo</a> <a class="form_button back_blue" href="user.php?n=neokarny">neokarny</a> <a class="form_button back_blue" href="user.php?n=neokarny">neokarny</a> <a class="form_button back_blue" href="user.php?n=nicholasvernacchio">nicholasvernacchio</a> <a class="form_button back_blue" href="user.php?n=nwinches">nwinches</a> <a class="form_button back_blue" href="user.php?n=oblvn924">oblvn924</a> <a class="form_button back_blue" href="user.php?n=octopyssy">octopyssy</a> <a class="form_button back_blue" href="user.php?n=onehitkills">onehitkills</a> <a class="form_button back_blue" href="user.php?n=orzechXIX">orzechXIX</a> <a class="form_button back_blue" href="user.php?n=oto146">oto146</a> <a class="form_button back_blue" href="user.php?n=ourobolus">ourobolus</a> <a class="form_button back_blue" href="user.php?n=patrickherick">patrickherick</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=pslducky">pslducky</a> <a class="form_button back_blue" href="user.php?n=puhnitor">puhnitor</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=reidabee">reidabee</a> <a class="form_button back_blue" href="user.php?n=rememberthistime">rememberthistime</a> <a class="form_button back_blue" href="user.php?n=rinimt">rinimt</a> <a class="form_button back_blue" href="user.php?n=rossx8">rossx8</a> <a class="form_button back_blue" href="user.php?n=ry4n">ry4n</a> <a class="form_button back_blue" href="user.php?n=sansansan">sansansan</a> <a class="form_button back_blue" href="user.php?n=satelliteyrs00">satelliteyrs00</a> <a class="form_button back_blue" href="user.php?n=sazo">sazo</a> <a class="form_button back_blue" href="user.php?n=shelbx">shelbx</a> <a class="form_button back_blue" href="user.php?n=shogun347">shogun347</a> <a class="form_button back_blue" href="user.php?n=sintesa">sintesa</a> <a class="form_button back_blue" href="user.php?n=sky_solo">sky_solo</a> <a class="form_button back_blue" href="user.php?n=sneekorz">sneekorz</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=souldracula">souldracula</a> <a class="form_button back_blue" href="user.php?n=sp4c3d">sp4c3d</a> <a class="form_button back_blue" href="user.php?n=sskoi7744">sskoi7744</a> <a class="form_button back_blue" href="user.php?n=starshipwaters">starshipwaters</a> <a class="form_button back_blue" href="user.php?n=staticanime">staticanime</a> <a class="form_button back_blue" href="user.php?n=stratios">stratios</a> <a class="form_button back_blue" href="user.php?n=suislide101">suislide101</a> <a class="form_button back_blue" href="user.php?n=supah_mama_luigi">supah_mama_luigi</a> <a class="form_button back_blue" href="user.php?n=swf89">swf89</a> <a class="form_button back_blue" href="user.php?n=syntaxtsb">syntaxtsb</a> <a class="form_button back_blue" href="user.php?n=tashikie">tashikie</a> <a class="form_button back_blue" href="user.php?n=tatacolo">tatacolo</a> <a class="form_button back_blue" href="user.php?n=tav73">tav73</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=terminality">terminality</a> <a class="form_button back_blue" href="user.php?n=tfergzilla">tfergzilla</a> <a class="form_button back_blue" href="user.php?n=thecakeisalie22">thecakeisalie22</a> <a class="form_button back_blue" href="user.php?n=thecakeisalie22">thecakeisalie22</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=thegreatcraig">thegreatcraig</a> <a class="form_button back_blue" href="user.php?n=thenthomwaslike">thenthomwaslike</a> <a class="form_button back_blue" href="user.php?n=thenthomwaslike">thenthomwaslike</a> <a class="form_button back_blue" href="user.php?n=thepeebmeister">thepeebmeister</a> <span class="form_button back_blue">Private</span> <a class="form_button back_blue" href="user.php?n=tiagobaia21">tiagobaia21</a> <a class="form_button back_blue" href="user.php?n=toastahed5973">toastahed5973</a> <a class="form_button back_blue" href="user.php?n=tomwiththeweather">tomwiththeweather</a> <a class="form_button back_blue" href="user.php?n=vargaman">vargaman</a> <a class="form_button back_blue" href="user.php?n=vitamins999">vitamins999</a> <a class="form_button back_blue" href="user.php?n=vivaladil">vivaladil</a> <a class="form_button back_blue" href="user.php?n=vlyur">vlyur</a> <a class="form_button back_blue" href="user.php?n=walilkoa">walilkoa</a> <a class="form_button back_blue" href="user.php?n=waxt">waxt</a> <a class="form_button back_blue" href="user.php?n=weffke">weffke</a> <a class="form_button back_blue" href="user.php?n=werepancake">werepancake</a> <a class="form_button back_blue" href="user.php?n=wizardofauz">wizardofauz</a> <a class="form_button back_blue" href="user.php?n=wookie">wookie</a> <a class="form_button back_blue" href="user.php?n=wrathofanima">wrathofanima</a> <a class="form_button back_blue" href="user.php?n=wulf43">wulf43</a> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> <span class="form_button back_blue">Private</span> </div>
+</div> </div> <div class="content_100"> </div> <div class="content_100"> </div> <div class="content_100"> </div> <div class="content_100"> </div> </div>
+</div> <div class="contain_out">
+<div class="contain_in"> <div class="							content_100  center">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle" style="display:block;margin:1%;" data-ad-client="ca-pub-7605721541969230" data-ad-slot="8455119541" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> </div>
+<div class="content_100"></div>
+</div>
+</div>
+</div> 
+</div> 
+<div class="footer back_primary">
+<div class="contain_out">
+<div class="contain_in">
+<div class="content_25" style="margin-top:0;">
+<div class="in">
+<h3>Feedback</h3>
+<li><a class="text_blue" href="feedback.php">Contact Us</a></li>
+<li><a class="text_blue" href="donate.php">Donate</a></li>
+</div>
+</div>
+<div class="content_25" style="margin-top:0;">
+<div class="in">
+<h3>Social</h3>
+<li><a href="https://facebook.com/HowLongToBeat/">Facebook</a></li>
+
+<li><a href="https://twitter.com/HowLongToBeat/">Twitter</a></li>
+</div>
+</div>
+<div class="content_50" style="margin-top:0;">
+<div class="in">
+<h3>
+&#169;
+<script type="text/javascript">
+				                    var theDate=new Date();
+				                    document.write(theDate.getFullYear());
+				                </script>
+HowLongToBeat.com
+</h3>
+<li><a href="privacy.php">Privacy Policy & Cookies</a></li>
+<li>Powered By Wind, Built With Love</li>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="js/site_80.js"></script>
+<script>
+			if('serviceWorker' in navigator) {
+			  navigator.serviceWorker
+			           .register('sw.js')
+			           .then(function() { console.log("HLTB Connected"); });
+			}
+		</script>
+</body>
+</html>
