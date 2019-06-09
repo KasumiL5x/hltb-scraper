@@ -8,23 +8,23 @@ def abspath(file):
 	return os.path.abspath(os.path.join(os.path.dirname(__file__), file))
 
 ## 11eyes CrossOver (Developer, Publisher, Genre, JP)
-with open(abspath('./offline-tests/eyes.html')) as file:
+with open(abspath('./tests/eyes.html')) as file:
 	eyes_sel = scrapy.Selector(text=file.read())
 
 # Peggle (Developers, Publishers, Playable On, Genre, NA, EU)
-with open(abspath('./offline-tests/peggle.html')) as file:
+with open(abspath('./tests/peggle.html')) as file:
 	peggle_sel = scrapy.Selector(text=file.read())
 
 # Witcher 3 (Developer, Publishers, Playable On, Genres, NA, EU, JP)
-with open(abspath('./offline-tests/witcher3.html')) as file:
+with open(abspath('./tests/witcher3.html')) as file:
 	witcher_sel = scrapy.Selector(text=file.read())
 
 # Blood & Wine (Type, Developer, Publisher, Playable On, Genres, NA)
-with open(abspath('./offline-tests/bloodwine.html')) as file:
+with open(abspath('./tests/bloodwine.html')) as file:
 	blood_sel = scrapy.Selector(text=file.read())
 
 # IDARB (Co-Op, Vs., but no other times)
-with open(abspath('./offline-tests/idarb.html')) as file:
+with open(abspath('./tests/idarb.html')) as file:
 	idarb_sel = scrapy.Selector(text=file.read())
 
 def parse_game(sel):
