@@ -1,6 +1,10 @@
+import os
 import scrapy
 from scrapy.crawler import CrawlerProcess
 import pandas as pd
+
+def abspath(file):
+	return os.path.abspath(os.path.join(os.path.dirname(__file__), file))
 
 class HLTB_Completions_Spider(scrapy.Spider):
 	name = 'hltb_completions_spider'
@@ -75,7 +79,7 @@ class HLTB_Completions_Spider(scrapy.Spider):
 				print('Skipping unknown table:', title)
 		
 		# Write out this individual game's dataframe.
-		game_df.to_csv('./completions/%s.csv' % game_id, index=None)
+		game_df.to_csv(abspath('./completions/%s.csv' % game_id), index=None)
 		current_game_number += 1
 	#end
 #end

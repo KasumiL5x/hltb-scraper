@@ -43,9 +43,13 @@ Notes:
         'JP' is a single entry (Japan release date).
 """
 
+import os
 import scrapy
 from scrapy.crawler import CrawlerProcess
 import pandas as pd
+
+def abspath(file):
+	return os.path.abspath(os.path.join(os.path.dirname(__file__), file))
 
 class HLTB_Game_Spider(scrapy.Spider):
 	name = 'hltb_game_spider'
@@ -151,5 +155,5 @@ all_games_df.sort_values('title', inplace=True)
 all_games_df.index = pd.RangeIndex(start=0, stop=len(all_games_df))
 
 # write out csv
-all_games_df.to_csv('all-games.csv', index=None)
+all_games_df.to_csv(abspath('./all-games.csv'), index=None)
 # print(all_games_df)

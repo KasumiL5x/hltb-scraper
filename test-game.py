@@ -93,7 +93,7 @@ all_games_df.sort_values('title', inplace=True)
 all_games_df.index = pd.RangeIndex(start=0, stop=len(all_games_df))
 
 # write out csv
-all_games_df.to_csv('all-games-test.csv', index=None)
+all_games_df.to_csv(abspath('./all-games-test.csv'), index=None)
 
 print(all_games_df)
 print(all_games_df.info())
